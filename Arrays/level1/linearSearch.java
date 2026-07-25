@@ -1,6 +1,6 @@
 public class linearSearch {
 
-    public static int linearSearch(int[] arr, int target) {
+    public static int linearSrh(int[] arr, int target) {
 
         for (int i = 0; i < arr.length; i++) {
 
@@ -18,6 +18,6 @@ public class linearSearch {
         int[] arr = {3, 5, 2, 8, 10};
         int target = 8;
 
-        System.out.println(linearSearch(arr, target));
+        System.out.println(linearSrh(arr, target));
     }
 }
