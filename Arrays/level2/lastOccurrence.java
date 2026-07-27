@@ -1,6 +1,6 @@
 package Arrays.level2;
 
-public class lastOcc {
+public class lastOccurrence {
     public static int lastOcc(int[] arr, int target) {
         int ans = -1, high = arr.length - 1, low = 0;
 
