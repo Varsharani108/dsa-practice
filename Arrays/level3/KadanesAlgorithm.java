@@ -10,7 +10,7 @@ public class KadanesAlgorithm {
         for (int i = 0; i < arr.length; i++) {
 
             sum += arr[i];
-
+            
             maxi = Math.max(maxi, sum);
 
             if (sum < 0) {
