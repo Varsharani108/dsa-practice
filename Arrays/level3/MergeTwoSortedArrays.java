@@ -1,6 +1,6 @@
 package Arrays.level3;
 
-public class MergeTwoSortedArrays {
+public class MergeTwoSortedArrays{
 
     public static void merge(int[] arr1, int[] arr2) {
 
