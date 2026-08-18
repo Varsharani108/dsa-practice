@@ -1,19 +1,18 @@
-package Arrays.level2;
+//First element strictly greater than target.(Upper Bound (First > target))
+package Arrays.Bs_On_1D;
 
-public class searchInsertPosition {
+public class upperBound {
     public static int search(int[] arr, int target){
         int low=0,high=arr.length-1,ans=arr.length;
         
         while (low <= high) {
             int mid=(high+low)/2;
-            if(target <= arr[mid]){
+            if(target < arr[mid]){
                 ans=mid;
-
                 high=mid-1;
             }
             else{
                 low=mid+1;
-                
             }
     
         }
@@ -25,4 +24,5 @@ public class searchInsertPosition {
         System.out.println(search(arr,12));
         
     }
+    
 }

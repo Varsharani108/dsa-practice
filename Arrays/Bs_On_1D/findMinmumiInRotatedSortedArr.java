@@ -1,8 +1,8 @@
-package Arrays.level2;
+package Arrays.Bs_On_1D;
 
-public class findPeakElement {
+public class findMinmumiInRotatedSortedArr {
 
-    public static int findPeak(int[] arr) {
+    public static int findMin(int[] arr) {
 
         int low = 0;
         int high = arr.length - 1;
@@ -11,7 +11,7 @@ public class findPeakElement {
 
             int mid = low + (high - low) / 2;
 
-            if (arr[mid] < arr[mid + 1]) {
+            if (arr[mid] > arr[high]) {
                 low = mid + 1;
             } else {
                 high = mid;
@@ -19,13 +19,13 @@ public class findPeakElement {
 
         }
 
-        return low;
+        return arr[low];
     }
 
     public static void main(String[] args) {
 
-        int[] arr = {1,2,3,1};
+        int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
 
-        System.out.println(findPeak(arr));
+        System.out.println(findMin(arr));
     }
 }

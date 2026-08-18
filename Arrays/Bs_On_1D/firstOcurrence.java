@@ -1,4 +1,4 @@
-package Arrays.level2;
+package Arrays.Bs_On_1D;
 
 public class firstOcurrence {
     public static int fstOcc(int[] arr, int target) {

@@ -1,24 +1,22 @@
-//Lower Bound (First >= target)
-package Arrays.level2;
-
-public class lowerBound {
+package Arrays.Bs_On_1D;
+public class binarySearch {
     public static int search(int[] arr, int target){
-        int low=0,high=arr.length-1,ans=arr.length;
+        int low=0,high=arr.length-1;
         
         while (low <= high) {
             int mid=(high+low)/2;
-            if(target <= arr[mid]){
-                ans=mid;
-
+            if(target <arr[mid]){
                 high=mid-1;
             }
-            else{
+            else if(target> arr[mid]){
                 low=mid+1;
-                
+            }
+            else{
+                return mid;
             }
     
         }
-        return ans;
+        return -1;
 
     }
     public static void main(String[] args) {
@@ -26,4 +24,5 @@ public class lowerBound {
         System.out.println(search(arr,12));
         
     }
+    
 }

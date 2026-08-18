@@ -1,4 +1,4 @@
-package Arrays.level2;
+package Arrays.Bs_On_1D;
 
 public class singleElementInSortedArr {
     public static int singleElement(int[] arr) {
