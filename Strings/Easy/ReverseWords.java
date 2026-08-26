@@ -1,7 +1,5 @@
 package Strings.Easy;
 
-package Strings.Easy;
-
 public class ReverseWords {
 
     public static String reverseWords(String s) {

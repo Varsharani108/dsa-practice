@@ -1,7 +1,5 @@
 package Strings.Easy;
 
-package Strings.Easy;
-
 public class LargestOddNumber {
 
     public static String largestOddNumber(String s) {

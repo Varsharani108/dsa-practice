@@ -1,3 +1,4 @@
+package Arrays.Bs_On_2D;
 public class RowWithMaximumOnes {
 
     public static int findRowWithMaxOnes(int[][] matrix) {
