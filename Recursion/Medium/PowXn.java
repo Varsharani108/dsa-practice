@@ -1,4 +1,4 @@
-package Recursion.Medium;
+package Recursion.medium;
 
 public class PowXn {
 
