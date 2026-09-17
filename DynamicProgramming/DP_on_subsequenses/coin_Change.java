@@ -25,7 +25,7 @@ public class coin_Change {
             int result = coinChange(coins, amount - coin, dp);
 
             if (result != Integer.MAX_VALUE) {
-                minCoins = Math.min(minCoins, result + 1);
+                minCoins = Math.min(minCoins, result + 1);//when we make tree at the end function call coinChange(coins,0,dp) return 0 and this this coin also used so add 1 to obtain correct result
             }
         }
 

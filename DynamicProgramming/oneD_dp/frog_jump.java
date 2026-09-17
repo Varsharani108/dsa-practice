@@ -47,3 +47,89 @@ public class frog_jump {
         System.out.println("Minimum Energy: " + answer);
     }
 }
+
+//tabulation method(bottomup approach) of frog jump
+
+// package DynamicProgramming.oneD_dp;
+
+// public class frog_jump {
+
+//     static int frogJump(int[] height) {
+
+//         int n = height.length;
+
+//         int[] dp = new int[n];
+
+//         dp[0] = 0;
+
+//         for (int i = 1; i < n; i++) {
+
+//             int jumpOne = dp[i - 1]
+//                     + Math.abs(height[i] - height[i - 1]);
+
+//             int jumpTwo = Integer.MAX_VALUE;
+
+//             if (i > 1) {
+//                 jumpTwo = dp[i - 2]
+//                         + Math.abs(height[i] - height[i - 2]);
+//             }
+
+//             dp[i] = Math.min(jumpOne, jumpTwo);
+//         }
+
+//         return dp[n - 1];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[] height = {10, 20, 30, 10};
+
+//         int answer = frogJump(height);
+
+//         System.out.println("Minimum Energy: " + answer);
+//     }
+// }
+
+// Frog Jump ka Space Optimization
+
+// package DynamicProgramming.oneD_dp;
+
+// public class frog_jump {
+
+//     static int frogJump(int[] height) {
+
+//         int n = height.length;
+
+//         int prev2 = 0;
+//         int prev = 0;
+
+//         for (int i = 1; i < n; i++) {
+
+//             int jumpOne = prev
+//                     + Math.abs(height[i] - height[i - 1]);
+
+//             int jumpTwo = Integer.MAX_VALUE;
+
+//             if (i > 1) {
+//                 jumpTwo = prev2
+//                         + Math.abs(height[i] - height[i - 2]);
+//             }
+
+//             int curr = Math.min(jumpOne, jumpTwo);
+
+//             prev2 = prev;
+//             prev = curr;
+//         }
+
+//         return prev;
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[] height = {10, 20, 30, 10};
+
+//         int answer = frogJump(height);
+
+//         System.out.println("Minimum Energy: " + answer);
+//     }
+// }
