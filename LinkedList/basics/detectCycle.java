@@ -14,7 +14,7 @@ public class detectCycle {
 
     static Node head;
 
-    public static boolean isCycle() {
+    public static boolean isCycle() {//this approach is called floyd's cycle finding approach
 
         Node slow = head;
         Node fast = head;
