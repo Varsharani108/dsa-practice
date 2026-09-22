@@ -1,8 +1,7 @@
 package basics;
 
-public class addLast {
+public class addInMiddle {
 
-    // Node
     static class Node {
         int data;
         Node next;
@@ -13,30 +12,23 @@ public class addLast {
         }
     }
 
-    // Add at Last
-    public static Node addLast(Node head, int data) {
+    public static void add(int index, int data, Node head) {
+
         Node newNode = new Node(data);
 
-        // If Linked List is empty
-        if (head == null) {
-            return newNode;
-        }
-
         Node temp = head;
+        int i = 0;
 
-        // Go to last node
-        while (temp.next != null) {
+        while (i < index - 1) {
             temp = temp.next;
+            i++;
         }
 
-        // Add new node at last
+        newNode.next = temp.next;
         temp.next = newNode;
-
-        return head;
     }
 
-    // Print Linked List
-    public static void printList(Node head) {
+    public static void printLL(Node head) {
 
         Node temp = head;
 
@@ -55,11 +47,11 @@ public class addLast {
         head.next.next = new Node(30);
 
         System.out.println("Before adding:");
-        printList(head);
+        printLL(head);
 
-        head = addLast(head, 40);
+        add(2, 25, head);
 
         System.out.println("After adding:");
-        printList(head);
+        printLL(head);
     }
 }
