@@ -1,4 +1,4 @@
-package Queue.Basics;
+package Stack.Basics;
 
 import java.util.*;
 
